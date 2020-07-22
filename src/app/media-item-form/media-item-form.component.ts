@@ -29,8 +29,8 @@ export class MediaItemFormComponent implements OnInit {
   }
 
   onSubmit(mediaItem: any){
-    console.log(mediaItem);
-    this.mediaItemService.add(mediaItem);
+
+    this.mediaItemService.add(mediaItem).subscribe();
   }
 
   yearValidator(control: FormControl){
