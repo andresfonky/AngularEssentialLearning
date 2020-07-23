@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./media-item.component.css']
 })
 export class MediaItemComponent {
-  @Input() mediaItem;
+  @Input() mediaItem: any;
   @Output() delete = new EventEmitter();
 
   onDelete(){
